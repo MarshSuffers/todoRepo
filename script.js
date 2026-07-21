@@ -80,5 +80,7 @@ resetBtn.addEventListener("click", reset);
 
 function reset() {
   localStorage.clear;
-  displayTasks();
+  taskList.innerHTML = "<p>No Tasks</p>";
+  updateArray();
+  taskArray.length = 0;
 }
