@@ -1,5 +1,5 @@
 //Declare Variables
-let taskArray = JSON.parse(localStorage.getItem("taskArray"));
+let taskArray = [];
 
 const addTaskBtn = document.getElementById("addTaskBtn");
 const deleteBtn = document.getElementById("deleteBtn");
@@ -13,6 +13,7 @@ let task = document.getElementById("inputText");
 
 //Initial Load
 displayTasks();
+checkStorage();
 
 //Add Task
 addTaskBtn.addEventListener("click", addTask);
@@ -72,6 +73,14 @@ function saveTask() {
   updateArray();
   saveBtn.style.display = "none";
   addTaskBtn.style.display = "block";
+}
+
+//Check local storage
+function checkStorage() {
+  let storage = JSON.parse(localStorage.getItem("taskArray"));
+  if (storage != null) {
+    let taskArray = storage;
+  }
 }
 
 //Update Array
