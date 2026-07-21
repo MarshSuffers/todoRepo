@@ -1,14 +1,16 @@
 //Declare Variables
-const taskList = [];
+const taskList = ["test"];
 const addTaskBtn = document.getElementById("addTaskBtn");
 let task = document.getElementById("inputText");
+
+console.log(taskList);
 
 //Add Task
 addTaskBtn.addEventListener("click", addTask);
 
 function addTask() {
   console.log("test");
-  taskList.push(task);
+  taskList.push(task.value);
   console.log(taskList);
 }
 
