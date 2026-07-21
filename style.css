@@ -58,6 +58,12 @@ input {
   border-radius: 8px;
 }
 
+input:hover {
+  background-color: aliceblue;
+  border-color: black;
+  color: black;
+}
+
 button {
   min-width: 80px;
   height: 38px;
@@ -68,6 +74,12 @@ button {
   border: 3px solid aliceblue;
   border-radius: 8px;
   text-align: center;
+}
+
+button:hover {
+  position: relative;
+  bottom: 5px;
+  left: 5px;
 }
 
 #saveEditBtn {
