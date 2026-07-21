@@ -37,8 +37,8 @@ function displayTasks() {
     console.log(taskArray);
     taskList.innerHTML = "";
     for (let i = 0; i < taskArray.length; i++) {
-      taskList.innerHTML += `<li>${taskArray[i]}</li><button onclick="deleteTask(${i})">Delete</button>
-      <button onclick="editTask(${i})">Edit</button>`;
+      taskList.innerHTML += `<div "class=item"><li>${taskArray[i]}</li><button onclick="deleteTask(${i})">Delete</button>
+      <button onclick="editTask(${i})">Edit</button></div>`;
       updateArray();
     }
   }
@@ -59,6 +59,8 @@ function editTask(ind) {
   console.log(ind);
   saveInd.value = ind;
   task.value = taskArray[saveInd.value];
+  saveBtn.style.display = "block";
+  addTaskBtn.style.display = "none";
 }
 
 //Save Edit
@@ -68,6 +70,8 @@ function saveTask() {
   taskArray[saveInd.value] = task.value;
   displayTasks();
   updateArray();
+  saveBtn.style.display = "none";
+  addTaskBtn.style.display = "block";
 }
 
 //Update Array

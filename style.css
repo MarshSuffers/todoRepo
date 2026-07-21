@@ -1,0 +1,89 @@
+h1,
+p,
+a,
+li,
+button {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: aliceblue;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rebeccapurple;
+}
+
+#contentContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: steelblue;
+  margin: auto;
+  border: 5px solid black;
+  border-radius: 5px;
+  width: 45vw;
+  min-height: 45vh;
+}
+
+h1 {
+  margin: 25px;
+  font-size: 48px;
+}
+
+.section {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 38px;
+  width: 300px;
+  background-color: black;
+  color: aliceblue;
+  font-size: 22px;
+  margin: 5px;
+  border: 3px solid aliceblue;
+  border-radius: 8px;
+}
+
+button {
+  min-width: 80px;
+  height: 38px;
+  font-size: 18px;
+  background-color: black;
+  color: aliceblue;
+  margin: 5px;
+  border: 3px solid aliceblue;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#saveEditBtn {
+  display: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  font-size: 28px;
+  list-style-type: none;
+}
+
+p {
+  font-size: 48px;
+}
